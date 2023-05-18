@@ -138,6 +138,7 @@ const DEFAULT_THEME = {
           bg: `#FFFFFF`,
           borderWidth: '1',
           borderColor: `#790000`,
+        
           _hover: {
             bg: `#FFFFFF`
           },
@@ -145,11 +146,70 @@ const DEFAULT_THEME = {
             bg: `#f9f5f5`
           },
           _text: {
+            fontWeight: '700',
             color: '#790000'
           },
-          rounded: '4px'
-        })
+          rounded: '4',
+          shadow:'2px 3px 0px #8B7171'
+        }),
+        statusBtnAdmin: ({ colorScheme }: any) => ({
+          bg: `${colorScheme}.50`,
+          borderWidth: '1',
+          borderColor: `${colorScheme}.500`,
+          _hover: {
+            bg: `${colorScheme}.100`
+          },
+          _pressed: {
+            bg: `${colorScheme}.200`
+          },
+          _text: {
+            color: `${colorScheme}.500`
+          },
+          rounded: '100'
+        }),
       }
+    }
+  },
+  shadows: {
+    FooterShadow: {
+      shadowColor: '#e0e0e066',
+      shadowOffset: {
+        width: 1,
+        height: 3
+      },
+      shadowOpacity: 1,
+      shadowRadius: 1.0,
+      elevation: 1
+    },
+    RedFillShadow: {
+      shadowColor: '#C92A42',
+      shadowOffset: {
+        width: 1,
+        height: 3
+      },
+      shadowOpacity: 1,
+      shadowRadius: 1.0,
+      elevation: 1
+    },
+    RedOutlineShadow: {
+      shadowColor: '#8B7171',
+      shadowOffset: {
+        width: 1,
+        height: 3
+      },
+      shadowOpacity: 1,
+      shadowRadius: 1.0,
+      elevation: 1
+    },
+    RedBoxShadow: {
+      shadowColor: '#790000',
+      shadowOffset: {
+        width: 1,
+        height: 3
+      },
+      shadowOpacity: 1,
+      shadowRadius: 1.0,
+      elevation: 1
     }
   },
   colors: {
@@ -343,6 +403,15 @@ const DEFAULT_THEME = {
     },
     textMaroonColor: {
       400: '#790000'
+    },
+    bgPinkColor:{
+      300:'#F9E9DB'
+    },
+    editIcon:{
+      300:'#3F8BF1'
+    },
+    sendMessageBtn:{
+      200:'#14242D'
     }
   }
 }
